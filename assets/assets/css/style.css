@@ -1,0 +1,158 @@
+*{
+	margin: 0px;
+}
+
+.btn-share{
+	margin-bottom:20px;
+	margin-top: 20px;
+	text-shadow: 0px 0px 8px white;
+
+}
+
+a.btn-share:hover{
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+}
+
+.box1, .box1-form-control{
+	border-radius: 5px;
+	padding-left: 2%;
+	padding: 10px;
+	min-height: 10%;
+}
+.box1{
+		border: 1px solid rgb(90,90,90);
+		box-shadow: 2px 2px 20px rgb(200,200,200);
+}
+.box1 ul{
+	list-style: none;
+	text-align: left !important;
+}
+
+.box1-title{
+	text-align: center;
+	text-decoration: bold;
+	letter-spacing: 2;
+	text-shadow: 2px 2px rgb(200,200,200);
+}
+input.box1-form-control {
+width: 95%;
+}
+textarea.box1-form-control {
+width: 95%;
+}
+
+.box1-btn-submit, .box1-btn-cancel, .box1-btn-visit{
+	width:95%;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 5px;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	color: white;
+	padding: 15px !important;
+}
+
+.box1-btn-submit{
+		margin-top: 25px;
+		background: rgb(90,90,90);
+}
+
+.box1-btn-cancel{
+		background: #1a0000;
+}
+
+.box1-btn-visit{
+		background: #8a8a5c;
+}
+/*Here goes the menu*/
+
+.menu ul{
+    list-style: none;
+}
+
+.menu a  {
+  text-decoration: none;
+  color: white;
+}
+
+.tab {
+  float: right;
+  padding: 0px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.25em;
+  line-height: 42px;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
+
+@media screen and (min-width: 600px){
+	.tab{
+		width: 20% !important;
+	}
+	.tab i:after{
+		content: " "attr(data-linkInfo)" ";
+		color: white;
+	}
+}
+
+@media screen and (max-width: 599px) and (min-width: 480px){
+	.tab{
+		width: 25% !important;
+	}
+	.tab i:after{
+		content: " "attr(data-linkInfo)" "; /*u can write your simple text in ""*/
+		color: white;
+	}
+}
+
+@media screen and (max-width: 479px){
+	.tab{
+		width: 25% !important;
+	}
+}
+
+.tab:hover {
+  background: rgba(153, 153, 255, 0.8) ;
+  color: black;
+}
+.menu{
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+	margin-top: 0px;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
+}
+
+/*container class should have a top margin of 55px atleast due to manu bar*/
+.container{
+	position: absolute;
+	top: 60px;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	text-align: center;
+}
+
+.row{
+	min-height: 20px;
+}
+
+.slideshow{
+	width: 100%;
+	min-height: 80%;
+	background-image: url('../otherImg/1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	box-shadow: 0px 0px 20px 6px black;
+}
+
+
+/*Shares options*/
+.shares-options{
+	padding-left: 10px;
+	font-size: 1.2em;
+	opacity: 0.5;
+}
