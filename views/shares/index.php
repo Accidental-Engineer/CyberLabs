@@ -17,7 +17,7 @@
 			<i class = "shares-options fa fa-edit fa-2x" aria-hidden="true"></i>
 			<i class = "shares-options fa fa-trash fa-2x" aria-hidden="true"></i>
 			<a href = "<?php echo $item['link']; ?>" target = "_blank"><i class = "shares-options fa fa-external-link fa-2x" aria-hidden="true"></i></a>
-			<i class = "shares-options fa fa-comment fa-2x" aria-hidden="true" onclick="(document.getElementById(<?php echo $item['id']; ?>).style.display == 'block')? (document.getElementById(<?php echo $item['id'] ?>).style.display = 'none'):(document.getElementById(<?php echo $item['id']; ?>).style.display = 'block');"></i>
+			<a href="<?php if(isset($_SESSION['user_data'])) { echo ROOT_URL.'discuss/'.$item['id']; }else { echo ROOT_URL.'users/login'; }?>"><i class = "shares-options fa fa-comments fa-2x" aria-hidden="true"></i></a>
 			<hr/>
 			<i class="fa fa-tag" aria-hidden="true"></i>
 			<input type = "text" id = "<?php echo $item['id']; ?>" class = "box1-form-control" name = "comment" style = "display: none;" placeholder = "Your argument ....."/>

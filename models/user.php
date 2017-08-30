@@ -57,17 +57,8 @@ class UserModel extends Model{
 	}
 
 	public function profile(){
-		// Sanitize POST
-			$post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-
-			$password = md5($post['password']);
-
-			if($post['submit']){
-				if($_SESSION['is_logged_in']){
-					header('Location: '.ROOT_URL.'shares');
-				}
-			}
-		}
+		
+	}
 
 		public function upload(){
 			if(isset($_POST["submit"])) {
